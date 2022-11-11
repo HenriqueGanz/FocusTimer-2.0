@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.page {
+    min-width: 50rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    gap: 16rem;
+}
+
+.darkModeTimerConfig {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: absolute;
+}
+
+.timer {
+    animation: slide-left 1s ease-in-out;
+}
+
+.time {
+    display: flex;
+    font-size: 12.6rem;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(0, 174, 248);
+    font-weight: bold;
+}
+
+.timeControl {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.timeControl button {
+    width: 4.8rem;
+    height: 4.8rem;
+
+    background: none;
+    border: none;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color:   rgb(109, 155, 177);
+}
+
+.cards {
+    display: grid;
+}
+
+
+.green, .blue, .purple, .orange {
+    animation: slide-right 1s ease-in-out;
+    width: 15rem;
+    height: 15rem;
+    margin:2.5rem;
+
+    border-radius: 2.4rem;
+    border: none;
+
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.green:focus {
+    background-color: rgb(109, 190, 120);
+}
+
+.blue:focus {
+    background-color: rgb(52, 170, 206);
+}
+
+.purple:focus {
+    background-color:rgb(151, 84, 29);
+}
+
+.orange:focus {
+    background-color: rgb(235, 190, 107);
+}
+
+button:focus {
+    transform: scale(1.3);
+}
+
+.greenBg {
+    background: url("./components/preview.gif");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.blueBg {
+    background: url("./components/rainbackground.gif");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.purpleBg {
+    background: url("./components/firewatch.gif");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.orangeBg {
+    background: url("./components/coffebar.gif");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.darkLightMode button {
+    position: absolute;
+    top: 6.4rem;
+    right: 6.4rem;
+
+    border: none;
+    background: none;
+    animation: slide-down 1s ease-in-out;
+    transition: .1s ease-in-out;
+
+    cursor: pointer;
+}
+
+.cleanMode button {
+    position: absolute;
+    bottom: 6.4rem;
+    right: 6.4rem;
+
+    border: none;
+    background: none;
+    animation: slide-down 1s ease-in-out;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+input {
+    margin: 3rem auto 0;
+    max-width: 8rem;
+    animation: slideInput .7s ease-in-out;
+}
+
+.darkMode {
+    background-image: url(./components/darkModeBg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+@keyframes slide-right {
+    0% {
+        transform:translateX(30rem);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateX(0rem);
+        opacity:1.0;
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        transform:translateX(-30rem);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateX(0rem);
+        opacity: 1.0;
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        transform:translateY(-10rem);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1.0;
+    }
+}
+
+@keyframes slideInput {
+    0% {
+        transform:translateY(2rem);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1.0;
+    }
+}
+
+
