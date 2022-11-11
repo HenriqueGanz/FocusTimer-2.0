@@ -211,7 +211,7 @@ input {
     }
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 425px) {
     .page {
         min-width: 50rem;
     }
