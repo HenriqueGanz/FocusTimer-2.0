@@ -211,4 +211,112 @@ input {
     }
 }
 
+@media (min-width: 400px) {
+    .page {
+        min-width: 50rem;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        height: 100vh;
+        gap: 16rem;
+    }
+    
+    .darkModeTimerConfig {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+    }
+    
+    .timer {
+        animation: slide-left 1s ease-in-out;
+    }
+    
+    .time {
+        display: flex;
+        justify-content: center;
+        font-size: 8rem;
+        font-family: 'Roboto', sans-serif;
+        color:rgb(16, 189, 252);
+        font-weight: bold;
+    }
 
+    .time span {
+        text-shadow: 5px 5px rgb(34, 33, 33);
+    }
+    
+    .timeControl {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+    .timeControl button {
+        width: 2.8rem;
+        height: 2.8rem;
+    
+        background: none;
+        border: none;
+        border-radius: 10rem;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+    }
+    
+    button:hover {
+        transform: scale(1.1);
+        background-color:   rgb(109, 155, 177);
+    }
+    
+    .cards {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .green, .blue, .purple, .orange {
+        animation: slide-right 1s ease-in-out;
+        width: 8rem;
+        height: 8rem;
+        margin:1.2rem;
+    
+        border-radius: 2rem;
+        border: none;
+    
+        cursor: pointer;
+        transition: .3s ease-in-out;
+    }
+
+    .darkLightMode button {
+        
+        top: 6.4rem;
+        right: 6.4rem;
+    
+        border: none;
+        background: none;
+        animation: slide-down 1s ease-in-out;
+        transition: .1s ease-in-out;
+    
+        cursor: pointer;
+    }
+    
+    .cleanMode button {
+        bottom: 4.4rem;
+        right: 4.4rem;
+    
+        border: none;
+        background: none;
+        animation: slide-down 1s ease-in-out;
+        transition: .1s ease-in-out;
+        cursor: pointer;
+    }
+
+    input {
+        margin: 2rem auto 0;
+        max-width: 6rem;
+        animation: slideInput .7s ease-in-out;
+    }
+    
+}
