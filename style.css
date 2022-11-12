@@ -313,5 +313,32 @@ input {
         max-width: 6rem;
         animation: slideInput .7s ease-in-out;
     }
+
+    .darkMode {
+        background-image: none;
+        background-color: rgb(5, 1, 29);
+    }
+
+    .greenBg {
+        background: url("./components/preview.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .blueBg {
+        background: url("./components/rainbackground.gif");
+        background-position-x: 76%;
+        background-position-y: 90%;
+    
+    .purpleBg {
+        background: url("./components/firewatch.gif");
+        background-position:50%;
+    }
+    
+    .orangeBg {
+        background-image: url("./components/coffebar.gif");
+        background-position: 100%;
+    }
+    
     
 }
