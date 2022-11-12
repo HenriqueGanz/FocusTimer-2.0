@@ -242,11 +242,9 @@ input {
         font-family: 'Roboto', sans-serif;
         color:rgb(16, 189, 252);
         font-weight: bold;
-    }
-
-    .time span {
         text-shadow: 5px 5px rgb(34, 33, 33);
     }
+
     
     .timeControl {
         display: flex;
@@ -289,6 +287,8 @@ input {
     }
 
     .darkLightMode button {
+        top: 2rem;
+        right: 2rem;
         border: none;
         background: none;
         animation: slide-down 1s ease-in-out;
@@ -298,6 +298,8 @@ input {
     }
     
     .cleanMode button {
+        bottom: 2rem;
+        right: 2rem;
         border: none;
         background: none;
         animation: slide-down 1s ease-in-out;
