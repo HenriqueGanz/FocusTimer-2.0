@@ -243,7 +243,7 @@ input {
         font-family: 'Roboto', sans-serif;
         color:rgb(16, 189, 252);
         font-weight: bold;
-        text-shadow: 5px 5px rgb(34, 33, 33);
+        text-shadow: 5px 5px rgb(1, 82, 107);
     }
 
     
@@ -253,19 +253,21 @@ input {
         gap: 5rem;
     }
     .timeControl button {
-        width: 3rem;
-        height: 3rem;
-    
-        background: none;
+        width: 4.5rem;
+        height: 4.5rem;
+        background: white;
         border: none;
         border-radius: 10rem;
         cursor: pointer;
         transition: .2s ease-in-out;
     }
+
+    .timeControl button path{
+        fill: rgb(1, 217, 255);
+    }
     
     button:hover {
         transform: scale(1.1);
-        background-color:   rgb(109, 155, 177);
     }
     
     .cards {
@@ -329,6 +331,7 @@ input {
         background: url("./components/rainbackground.gif");
         background-position-x: 76%;
         background-position-y: 90%;
+    }
     
     .purpleBg {
         background: url("./components/firewatch.gif");
