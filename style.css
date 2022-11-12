@@ -212,10 +212,11 @@ input {
 }
 
 @media (max-width: 700px) {
-    .page {
-        min-width: 50rem;
+    body {
+        position: fixed;
+        width: 100%;
+        height: 100%;
     }
-    
     main {
         display: flex;
         flex-direction: column;
