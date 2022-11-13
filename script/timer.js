@@ -1,3 +1,7 @@
+import {Sounds} from "/script/sounds.js"
+
+const sounds = Sounds()
+
 export function Timer ({
     minutesDisplay,
     secondsDisplay,
@@ -26,13 +30,13 @@ export function Timer ({
                 buttonPlay.classList.remove("hide")
                 buttonAddFiveMin.classList.remove("hide")
                 buttonRemoveFiveMin.classList.remove("hide")
-                timeOut()
+                sounds.timeOut()
                 updateDisplay(25, 0)
                 return
             }
     
             if (seconds <= 0) {
-                seconds = 60
+                seconds = 2
                 --minutes
             }
     
